@@ -1,0 +1,47 @@
+Folder
+then env
+activate
+then check python version and install django
+create django project
+then pgadmin( psycopg2 )
+make migrations 
+migrate
+then start app
+settings.py urls 
+templates, views, urls inside app
+
+--------------------
+
+static check in settings
+
+{% load static%} in html file
+
+then in cmd( python manage.py collectstatic )
+
+then in that link( href={% static '.........' %} )
+
+
+for admin page
+
+	python manage.py createsuperuser
+then runserver
+	python manage.py runserver
+	in broswer ( localhost:8000/admin )
+
+----------------------------
+
+for database in post 
+create in class in models.py
+then migration 
+then migrate
+
+
+for connecting html form
+use {% csrf_token %} inside form and set method to post and action to{% url 'your_url' %}
+then go to url and write the url function 
+then go to views.py and write function and call from html file and store in variable
+then assign the variable and save to models.py which will store in database
+
+
+for registering in admin page 
+goto admin.py and connect
